@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Website</title>
+  <style>
+  body{
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #fefefe;
+    }
+    h1 {
+      color: #3b3b3b;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .toggle-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .toggle-btn:hover {
+      background-color: #0056b3;
+    }
+    .content {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-left: 4px solid #007bff;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<div style="position: fixed; top: 15px; right: 20px; font-style: italic; color: #2e4f4f; font-weight: bold; font-size: 18px; background-color: #dbeadf; padding: 8px 12px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); z-index: 1000;">
+  "Every great developer once started with a single line of code."
+</div>
+  <h1>Welcome to Madhavi's Website!</h1>
+  
+  <p>A new journey begins: to shine, to learn, and to make my parents proud.</p>
+
+
+  <div class="section">
+    <button class="toggle-btn" onclick="toggleContent('about')">About Me</button>
+    <div class="content" id="about">
+      Hello! I'm Madhavi from Himachal Pradesh. I'm passionate about learning and growing. I'm currently pursuing BCA and love creating websites!
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="toggle-btn" onclick="toggleContent('hobbies')">My Hobbies</button>
+    <div class="content" id="hobbies">
+      Singing , Drawing , Exploring technology , and helping others .
+  </div>
+  </div>
+<div class="section">
+  <button class="toggle-btn" onclick="toggleContent('dreams')">My Dreams</button>
+  <div class="content" id="dreams" style="display: none;">
+    My dream is to make my parents proud and I want to be successful and independent.
+  </div>
+  </div>
+<div class="section">
+  <button class="toggle-btn" onclick="toggleContent('contact')">Contact Me</button>
+  <div class="content" id="contact" style="display: none;">
+    Email: kutlehriamadhavi@gmail.com<br>
+    Phone: +91-90150-44695
+</div>
+</div>
+<div class="section">
+  <button class="toggle-btn" onclick="toggleContent('skills')">My Skills</button>
+  <div class="content" id="skills" style="display: none;">
+    HTML, CSS, Basic JavaScript, Creativity, Communication, and Learning attitude.
+  </div>
+</div>
+
+<div class="section">
+  <button class="toggle-btn" onclick="toggleContent('message')">My Message</button>
+  <div class="content" id="message" style="display: none;">
+    I want to make my parents feel proud and become a successful web developer who builds beautiful and helpful websites for the world.
+  </div>
+</div>
+<div>
+<style>
+  .button-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+</style>
+</div>
+<div class="section" style="text-align: right;">
+  <button class="toggle-btn" onclick="toggleContent('goals')">My Goals</button>
+  <div class="content" id="goals">
+    I want to become a full-stack web developer, work on real-world projects, and keep improving every day.
+  </div>
+<div class="section" style="text-align: right;">
+  <button class="toggle-btn" onclick="toggleContent('learning')">What I'm Learning</button>
+  <div class="content" id="learning">
+   Currently learning HTML, CSS, JavaScript, and soon learn React and backend development too!
+ </div>
+<div class="section" style="text-align: right;">
+  <button class="toggle-btn" onclick="toggleContent('future')">My Future Vision</button>
+  <div class="content" id="future">
+    I dream of creating websites that help people and building my own tech startup someday!
+  </div>
+<div class="section" style="text-align: left;">
+  <button class="toggle-btn" onclick="toggleContent('learning')">Learning Tracker</button>
+  <div class="content" id="learning">
+   I'm consistently learning new technologies and improving my problem-solving skills every day.
+  </div>
+  </div>
+  <div class="section" style="text-align: left;">
+  <button class="toggle-btn" onclick="toggleContent('tech')">Tech Stack</button>
+  <div class="content" id="tech">
+   Currently working with HTML, CSS, and JavaScript-and excited to explore React soon!
+  </div>
+</div>
+  <div class="section" style="text-align: left;">
+  <button class="toggle-btn" onclick="toggleContent('journey')">My Journey</button>
+  <div class="content" id="journey">
+  From curiosity to passion-my web development journey is just getting started!
+  </div>
+</div>
+<div class="section" style="text-align: left;">
+  <h2>Let's Understand What Web Development Is</h2>
+  <h2> What is Web Development?</h2>
+  <p>
+    Web development means creating websites and web applications. It involves designing, coding, and maintaining sites from simple pages to full platforms.
+  </p>
+
+  <button class="toggle-btn" onclick="toggleContent('frontend')">Frontend Development</button>
+  <div class="content" id="frontend">
+    This is what users see! It includes HTML, CSS, and JavaScript that control layout, color, style, and animations.
+  </div>
+
+  <button class="toggle-btn" onclick="toggleContent('backend')">Backend Development</button>
+  <div class="content" id="backend">
+    Backend runs behind the scenes. It manages server logic, databases, and user data using languages like Node.js, PHP, or Python.
+  </div>
+
+  <button class="toggle-btn" onclick="toggleContent('tools')">Tools & Technologies</button>
+  <div class="content" id="tools">
+    Tools like Git, GitHub, and VS Code help in writing, sharing, and deploying code efficiently in real-world projects.
+</div>
+</div>
+<h2 style="text-align: left; margin-top: 40px;">Types of Web Development</h2>
+
+<div style="display: flex; gap: 10px; margin-bottom: 10px;">
+  <button class="toggle-btn" onclick="toggleContent('frontend')">Front-End</button>
+  <button class="toggle-btn" onclick="toggleContent('backend')">Back-End</button>
+  <button class="toggle-btn" onclick="toggleContent('fullstack')">Full-Stack</button>
+</div>
+
+<div class="content" id="frontend">
+  <ul>
+    <li>Builds the part users see and interact with</li>
+    <li>Focus on design, layout, and user experience</li>
+    <li>Uses HTML, CSS, JavaScript, React, etc.</li>
+  </ul>
+</div>
+
+<div class="content" id="backend">
+  <ul>
+    <li>Works on the server, database, and logic</li>
+    <li>Handles data storage, requests & security</li>
+    <li>Uses Node.js, PHP, Python, Java, etc.</li>
+  </ul>
+</div>
+
+<div class="content" id="fullstack">
+  <ul>
+    <li>Knows both front-end and back-end</li>
+    <li>Manages entire app from UI to server</li>
+    <li>Highly in-demand in the tech industry</li>
+  </ul>
+</div>
+</div>
+<div class="section" style="text-align: left; margin-top: 40px;">
+  <h2 style="text-align: left;">Languages Used in Web Development</h2>
+
+  <div style="margin-left: 20px;">
+    <h3 style="text-align: left;">Front-End Languages</h3>
+    <p style="text-align: left;">Used to build the visual parts of a website:</p>
+    <ul style="text-align: left; list-style-position: inside;">
+      <li><strong>HTML</strong> :Builds structure</li>
+      <li><strong>CSS</strong>:Adds style and layout</li>
+      <li><strong>JavaScript</strong>: Adds interactivity</li>
+    </ul>
+
+    <h3 style="text-align: left;">Back -End Languages</h3>
+    <p style="text-align: left;">Work behind the scenes:</p>
+    <ul style="text-align: left; list-style-position: inside;">
+      <li><strong>Node.js</strong>: Server-side JS</li>
+      <li><strong>PHP</strong>:Powers many websites</li>
+      <li><strong>Python</strong>:Clean and powerful</li>
+    </ul>
+
+    <h3 style="text-align: left;">Database Languages</h3>
+    <p style="text-align: left;">Used to store and manage data:</p>
+    <ul style="text-align: left; list-style-position: inside;">
+      <li><strong>SQL</strong> :For relational databases</li>
+      <li><strong>MongoDB</strong>: NoSQL, flexible</li>
+    </ul>
+    <div class="section" style="margin-top: 40px;">
+  <h2 style="text-align: left;">Tools I Use</h2>
+  <ul style="list-style-type: disc; padding-left: 20px; text-align: left;">
+    <li><strong>VS Code</strong> : My favorite code editor with lots of extensions</li>
+    <li><strong>Git & GitHub</strong> : For version control and sharing my code</li>
+    <li><strong>Canva</strong> :Design tool I use for icons and banners</li>
+    <li><strong>ChatGPT</strong> :For quick coding help and learning</li>
+  </ul>
+</div>
+  </div>
+  <div class="section" style="margin-top: 40px;">
+  <h2 style="text-align: left;">Website vs Web Application</h2>
+  <table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse; text-align: left;">
+    <tr style="background-color: #e2f4e9;">
+      <th>Feature</th>
+      <th>Website</th>
+      <th>Web Application</th>
+    </tr>
+    <tr>
+      <td>Purpose</td>
+      <td>To provide information</td>
+      <td>To interact and perform functions</td>
+    </tr>
+    <tr>
+      <td>User Interaction</td>
+      <td>Mostly read-only</td>
+      <td>Highly interactive</td>
+    </tr>
+    <tr>
+      <td>Examples</td>
+      <td>Blog, Company page</td>
+      <td>Online banking, Gmail</td>
+    </tr>
+  </table>
+</div>
+<div class="section">
+  <h2>My Mini Projects</h2>
+  <ul>
+    <li><strong>1. Personal Portfolio:</strong> A simple website with my intro, skills, and contact form.</li>
+    <li><strong>2. To-Do App:</strong> Lets users add, delete, and manage tasks.</li>
+    <li><strong>3. Calculator:</strong> A basic calculator built with HTML, CSS, and JavaScript.</li>
+  </ul>
+<div style="padding: 40px; text-align: left;">
+  <h1 style="font-size: 36px; font-weight: bold; color: #2f4f4f; margin-bottom: 20px;">
+    How I Created My Website:Step by Step Overview
+  </h1>
+
+  <ul style="list-style-type: square; font-size: 18px; line-height: 1.8;">
+    <li>
+      <strong>HTML for Structure:</strong> I used HTML to build the skeleton of the webpage, adding headings, paragraphs, sections, and layout blocks.
+    </li>
+    <li>
+      <strong>CSS for Styling:</strong> I applied colors, font sizes, alignments, spacing, and overall design using custom inline or internal CSS.
+    </li>
+    <li>
+      <strong>JavaScript for Interactivity:</strong> I used JavaScript to add toggle functions so that when someone clicks, hidden content becomes visible.
+    </li>
+    <li>
+      <strong>Layout Planning:</strong> I designed left and right sections using divs to display content like goals, hobbies, dreams, learning areas, and tools.
+    </li>
+    <li>
+      <strong>Motivational Messages:</strong> I included personal motivational lines at the top-right for a personal touch.
+    </li>
+    <li>
+      <strong>Learning Tracker:</strong> I made expandable sections where each topic like Frontend, Backend, and Full Stack expands when clicked.
+    </li>
+    <li>
+      <strong>Simple, Clean Design:</strong> I kept spacing and alignment clean so that content is readable and not cluttered.
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div style="text-align: center; margin-top: 60px;">
+  <h1 style="font-size: 40px; font-weight: bold; color: #2e8b57; font-family: 'Georgia', serif;">
+    THANK YOU FOR VISITING MY WEBSITE!
+  </h1>
+  <p style="font-size: 20px; font-weight: bold; color: #444;">
+    Your presence means a lot 
+  </p>
+</div>
+  <script>
+    function toggleContent(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
+
+
